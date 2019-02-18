@@ -20,4 +20,4 @@
 
 // When the game restarts the users score and score counter should reset to zero
 
-// Game should show the number of games the player wins and loses; refresh is not needed to restart the game 
+// Game should show the number of games the player wins and loses; refresh is not needed to restart the game    
