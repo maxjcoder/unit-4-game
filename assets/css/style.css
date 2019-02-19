@@ -1,0 +1,7 @@
+body {
+    background-image: url(../images/halftone.png);
+}
+
+#gem1, #gem2, #gem3, #gem4 {
+    background-color: white;
+}
