@@ -3,5 +3,27 @@ body {
 }
 
 #gem1, #gem2, #gem3, #gem4 {
+    border: 1px solid silver;
     background-color: white;
 }   
+
+.heading, .directions {
+    border: 2px solid silver;
+    width: 50%;
+    background-color: dodgerblue;
+    color: white;
+    padding: 5px;
+}
+
+.buttons {
+    border: 1px solid silver;
+    width: 30.5%;
+    padding: 5px;
+}
+
+#randomNumber, #win, #loss {
+    border: 2px solid silver;
+    width: 29.5%;
+    padding: 10px;
+    font-size: 32px;
+}
