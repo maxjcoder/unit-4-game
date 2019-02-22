@@ -4,19 +4,19 @@ $(document).ready(function() {
 
     $("#randomNumber").text(random);
 
-var gem1 = Math.floor(Math.random()*12+1);
-var gem2 = Math.floor(Math.random()*12+1);
-var gem3 = Math.floor(Math.random()*12+1);
-var gem4 = Math.floor(Math.random()*12+1);
+    var gem1 = Math.floor(Math.random()*12+1);
+    var gem2 = Math.floor(Math.random()*12+1);
+    var gem3 = Math.floor(Math.random()*12+1);
+    var gem4 = Math.floor(Math.random()*12+1);
 
-var tally = 0;
-var win = 0;
-var loss = 0;
+    var tally = 0;
+    var win = 0;
+    var loss = 0;
 
-$("#win").text(win);
-$("#loss").text(loss);
+    $("#win").text(win);
+    $("#loss").text(loss);
 
-function reset() {
+    function reset() {
     random = Math.floor(Math.random()*102+19);
     console.log(random);
 
@@ -73,7 +73,7 @@ else if (yourScore > randomNumber) {
     //hide point amount until player clicks a gem
     // upon click, update player score tally
 
-// Playe wins if tally matches computer guess from beginning of game
+// Player wins if tally matches computer guess from beginning of game
 
 // Player loses if tally goes above the random number
 
