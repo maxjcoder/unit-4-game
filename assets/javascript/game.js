@@ -12,7 +12,6 @@ $(document).ready(function() {
     var tally = 0;
     var win = 0;
     var loss = 0;
-    var yourScore = 0;
 
     $("#win").text(win);
     $("#loss").text(loss);
@@ -21,15 +20,15 @@ $(document).ready(function() {
     random = Math.floor(Math.random()*101+19);
     console.log(random);
 
-    $("#randomnumber").text(random);
+    $("#randomnNmber").text(random);
     
     var gem1 = Math.floor(Math.random()*11+1);
     var gem2 = Math.floor(Math.random()*11+1);
     var gem3 = Math.floor(Math.random()*11+1);
     var gem4 = Math.floor(Math.random()*11+1);
 
-    yourScore = 0;
-    $("#tally").text(yourScore);
+    tally = 0;
+    $("#tally").text(tally);
 }
 
 function win() {
@@ -47,59 +46,59 @@ function loss() {
 }
 
 $("#gem1").on ("click", function() {
-    tally = yourScore + gem1;
+    tally = tally + gem1;
     console.log("New Tally " + tally);
-    $("#tally").text(yourScore);
+    $("#tally").text(tally);
 
-    if (yourScore == randomNumber) {
+    if (tally == randomNumber) {
         win()
     }
     
-    else if (yourScore > randomNumber) {
+    else if (tally > randomNumber) {
         loss()
     }
 
 })
 
 $("#gem2").on ("click", function() {
-    tally = yourScore + gem2;
+    tally = tally + gem2;
     console.log("New Tally" + tally);
-    $("#tally").text(yourScore);
+    $("#tally").text(tally);
 
-    if (yourScore == randomNumber) {
+    if (tally == randomNumber) {
         win()
     }
     
-    else if (yourScore > randomNumber) {
+    else if (tally > randomNumber) {
         loss()
     }
     
 })
 
 $("#gem3").on("click", function() {
-    tally = yourScore + gem3;
+    tally = tally + gem3;
     console.log("New Tally" + tally);
-    $("#tally").text(yourScore);
+    $("#tally").text(tally);
 
-    if (yourScore == randomNumber) {
+    if (tally == randomNumber) {
         win()
     }
     
-    else if (yourScore > randomNumber) {
+    else if (tally > randomNumber) {
         loss()
     }
 })
 
 $("#gem4").on("click", function() {
-    tally = yourScore + gem4;
+    tally = tally + gem4;
     console.log("New Tally" + tally);
-    $("#tally").text(yourScore);
+    $("#tally").text(tally);
 
-    if (yourScore == randomNumber) {
+    if (tally == randomNumber) {
         win()
     }
     
-    else if (yourScore > randomNumber) {
+    else if (tally > randomNumber) {
         loss()
     }
 
